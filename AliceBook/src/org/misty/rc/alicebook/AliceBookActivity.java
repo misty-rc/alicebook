@@ -1,10 +1,15 @@
 package org.misty.rc.alicebook;
 
+import java.util.Map;
+
 import org.misty.rc.alicebook.fragment.MainFragmentAdapter;
 import org.misty.rc.alicebook.pref.AliceBookPreference;
+import org.misty.rc.alicebook.pref.KeyReference;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
@@ -37,7 +42,7 @@ public class AliceBookActivity extends FragmentActivity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		menu.add(0, MENU_SELECT_A, 0, "Menu A");
+		menu.add(0, MENU_SELECT_A, 0, "Test");
 		menu.add(0, MENU_SELECT_B, 0, "Preference");
 		
 		return true;
