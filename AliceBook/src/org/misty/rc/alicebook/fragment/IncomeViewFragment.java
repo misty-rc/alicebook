@@ -22,7 +22,7 @@ public class IncomeViewFragment extends Fragment {
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View v = inflater.inflate(R.layout.income_fragment, container, false);
+		View v = inflater.inflate(R.layout.income_fragment2, container, false);
 		TextView tv = (TextView) v.findViewById(R.id.income_test);
 		tv.setText("income");
 		

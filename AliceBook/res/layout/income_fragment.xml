@@ -3,59 +3,144 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-    <TextView 
+
+    <TextView
         android:id="@+id/income_test"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    
-	<TextView 
-	    android:id="@+id/income_display"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:textSize="40dp"
-	    android:gravity="right"/>
-	
-	<LinearLayout 
-	    android:id="@+id/income_calc_base"
-	    android:layout_height="match_parent"
-	    android:layout_width="match_parent"
-	    android:padding="30dp"
-	    android:orientation="horizontal">
+        android:layout_height="wrap_content" />
 
-	    <TableLayout android:id="@+id/income_calc_table" android:layout_width="fill_parent" android:layout_height="fill_parent">
-            <TableRow android:layout_weight="1" android:layout_height="0dp" android:layout_width="fill_parent" android:id="@+id/calcrow1">
-               <TextView android:id="@+id/sign" android:text="+/-" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/seven" android:text="7" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/eight" android:text="8" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/nine" android:text="9" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/divide" android:text="*" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/income_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:id="@+id/income_calc_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="30dp" >
+
+        <TableLayout
+            android:id="@+id/income_calc_table"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TableRow
+                android:id="@+id/calcrow1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/sign"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="+/-" />
+
+                <TextView
+                    android:id="@+id/seven"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_pressed"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="7" />
+
+                <TextView
+                    android:id="@+id/eight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_pressed"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="8" />
+
+                <TextView
+                    android:id="@+id/nine"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_pressed"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="9" />
+
+                <TextView
+                    android:id="@+id/divide"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_pressed"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="*" />
             </TableRow>
-            <TableRow android:layout_weight="1" android:layout_height="0dp" android:layout_width="wrap_content" android:id="@+id/calcrow2">
-               <TextView android:id="@+id/clear" android:text="C" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/four" android:text="4" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/five" android:text="5" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/six" android:text="6" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/times" android:text="x" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-            </TableRow>
-            <TableRow android:layout_weight="1" android:layout_height="0dp" android:layout_width="fill_parent" android:id="@+id/calcrow3">
-               <TextView android:id="@+id/allclear" android:text="AC" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/one" android:text="1" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/two" android:text="2" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/three" android:text="3" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/minus" android:text="-" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-            </TableRow>
-            <TableRow android:layout_weight="1" android:layout_height="0dp" android:layout_width="wrap_content" android:id="@+id/calcrow4">
-               <TextView android:id="@+id/zero" android:text="0" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/doublezero" android:text="00" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/comma" android:text="." android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/equal" android:text="=" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
-               <TextView android:id="@+id/plus" android:text="+" android:clickable="true" android:background="@drawable/calc_pressed_background_color" android:gravity="center" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1"/>
+
+            <TableRow
+                android:id="@+id/calcrow2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/clear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_pressed"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="C" />
+
+                <TextView
+                    android:id="@+id/four"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_pressed"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="4" />
+
+                <TextView
+                    android:id="@+id/five"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_pressed"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/six"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_pressed"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/times"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_pressed"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="x" />
             </TableRow>
         </TableLayout>
-	    
-	    
-	</LinearLayout>
-    
+    </LinearLayout>
 
 </LinearLayout>

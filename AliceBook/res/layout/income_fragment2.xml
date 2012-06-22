@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/income_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/income_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:id="@+id/income_calc_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="30dp" >
+
+        <TableLayout
+            android:id="@+id/income_calc_table"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TableRow
+                android:id="@+id/calcrow1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/sign"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="+/-" />
+
+                <TextView
+                    android:id="@+id/seven"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_upper"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="7" />
+
+                <TextView
+                    android:id="@+id/eight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_upper"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="8" />
+
+                <TextView
+                    android:id="@+id/nine"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_upper"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="9" />
+
+                <TextView
+                    android:id="@+id/divide"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_upper_right"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="*" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/calcrow2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/clear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_right"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="C" />
+
+                <TextView
+                    android:id="@+id/four"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_center"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="4" />
+
+                <TextView
+                    android:id="@+id/five"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_center"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/six"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_center"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/times"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_left"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="x" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/calcrow3"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/allclear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_right"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="AC" />
+
+                <TextView
+                    android:id="@+id/one"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_center"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="1" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_center"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/three"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_center"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="3" />
+
+                <TextView
+                    android:id="@+id/minus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_left"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="-" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/calcrow4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/zero"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/doublezero"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_bottom"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="00" />
+
+                <TextView
+                    android:id="@+id/comma"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_bottom"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="." />
+
+                <TextView
+                    android:id="@+id/equal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_list_bottom"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="=" />
+
+                <TextView
+                    android:id="@+id/plus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="+" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>
